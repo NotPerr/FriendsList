@@ -6,10 +6,10 @@
 
 <div id="friends" class="d-md-flex flex-wrap justify-content-around">
   <% @friends.each do |friend| %>
-    <%= render friend %>
-    
-    
-    
+    <div>
+      <%= render friend %>
+      <%= link_to "Show this friend", friend ,class:"btn btn-primary" %>
+    </div>
   <% end %>
 </div>
 

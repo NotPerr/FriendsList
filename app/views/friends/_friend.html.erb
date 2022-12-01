@@ -1,39 +1,33 @@
 
 
-<div  id="<%= dom_id friend %>" class="g-col-4 card">
-<div  >
+<div  id="<%= dom_id friend %>" class=" card">
+  <div>
+    <%= image_tag ("/assets/#{rand(4)}.png"),class:"img-fluid" %>
+    <div class="card-body">
+      
+          <h5 class="card-title">First name:</h5>
+          <p class="card-text"><%= friend.first_name %>
+        
+      
+          <h5 class="card-title">Last name:</h5>
+          <p class="card-text"><%= friend.last_name %></p>
+        
 
-<%= image_tag ("/assets/#{rand(4)}.png"),class:"card-img-top img-fluid" %>
-  <div class="card-body">
-    
-        <h5 class="card-title">First name:</h5>
-        <p class="card-text"><%= friend.first_name %>
-      
-    
-        <h5 class="card-title">Last name:</h5>
-        <p class="card-text"><%= friend.last_name %></p>
-      
+        
+          <h5 class="card-title">Email:</h5>
+          <p class="card-text"><%= friend.email %></p>
+        
 
-      
-        <h5 class="card-title">Email:</h5>
-        <p class="card-text"><%= friend.email %></p>
-      
+        
+          <h5 class="card-title">Phone:</h5>
+          <p class="card-text"><%= friend.phone %></p>
+        
 
-      
-        <h5 class="card-title">Phone:</h5>
-        <p class="card-text"><%= friend.phone %></p>
-      
-
-      
-        <h5 class="card-title">Twitter:</h5>
-        <p class="card-text"><%= friend.twitter %></p>
-        <%= link_to "Show this friend", friend ,class:"btn btn-primary" %>
+        
+          <h5 class="card-title">Twitter:</h5>
+          <p class="card-text"><%= friend.twitter %></p>
+          
+    </div>
   </div>
-  
-  
 </div>
-  
 
-  
-
-</div>
